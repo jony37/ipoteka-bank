@@ -1,58 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-    <link rel="stylesheet" href="./asist/css/style.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./asist/css/style.css" />
     <title>Ipoteka</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header-top section -->
     <header>
-        <div class="container header-top">
-            <div class="header-phone">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20" style="display: inline-block;" class="header-phone">
-                    <g id="_36-Smartphone" data-name="36-Smartphone" transform="translate(-5)">
-                      <rect id="Rectangle_73" data-name="Rectangle 73" width="12" height="18" rx="2" transform="translate(6 1)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"></rect>
-                      <line id="Line_7" data-name="Line 7" x2="4" transform="translate(10 16)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
-                    </g>
-                  </svg>
-                  <span class="header-p">
-                    Call center: <a href="#">(78) 150-11-22</a> 
-                  </span>
-                  <span class="header-p">Contact center: <a href="#">1233</a></span>
-            </div>
-            <div class="header-middle">
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 26 18">
-                        <g id="_2305588-eye-idea-look-view-vision-watch" data-name="2305588-eye-idea-look-view-vision-watch" transform="translate(-4 -18)">
-                          <path id="Path_34" data-name="Path 34" d="M29,27s-5.373,8-12,8S5,27,5,27s5.373-8,12-8S29,27,29,27Z" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                          <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="7.556" cy="8" rx="7.556" ry="8" transform="translate(9.444 19)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></ellipse>
-                          <path id="Path_35" data-name="Path 35" d="M27.989,28.75h-.253a2.318,2.318,0,0,1-.123,3,2.013,2.013,0,0,1-2.833.13v.268a3.421,3.421,0,0,0,1.983,3.163,3.093,3.093,0,0,0,3.518-.737,3.56,3.56,0,0,0,.7-3.725A3.225,3.225,0,0,0,27.989,28.75Z" transform="translate(-10.989 -5.162)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                        </g>
-                      </svg>
-                      Special features
-                </a>
-                <a href="#"><i class="fa-regular fa-paper-plane"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <select name="site" onchange="location.href=this.value">
-                    <option value="/">Рус</option>
-                    <option value="/uz/">Uzb</option>
-                    <option selected="" value="/en/">Eng</option>
-           </select>
-       </div>
+      <div class="container header-top">
+        <div class="all-phone">
+          <div class="header-phone">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="20"
+              viewBox="0 0 14 20"
+              style="display: inline-block"
+              class="header-phone"
+            >
+              <g
+                id="_36-Smartphone"
+                data-name="36-Smartphone"
+                transform="translate(-5)"
+              >
+                <rect
+                  id="Rectangle_73"
+                  data-name="Rectangle 73"
+                  width="12"
+                  height="18"
+                  rx="2"
+                  transform="translate(6 1)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></rect>
+                <line
+                  id="Line_7"
+                  data-name="Line 7"
+                  x2="4"
+                  transform="translate(10 16)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></line>
+              </g>
+            </svg>
+            <span class="header-p">
+              Call center: <a href="#">(78) 150-11-22</a>
+            </span>
+            <span class="header-p">Contact center: <a href="#">1233</a></span>
+          </div>
+          <div class="header-middle">
+            <a href="#" class="svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="18"
+                viewBox="0 0 26 18"
+              >
+                <g
+                  id="_2305588-eye-idea-look-view-vision-watch"
+                  data-name="2305588-eye-idea-look-view-vision-watch"
+                  transform="translate(-4 -18)"
+                >
+                  <path
+                    id="Path_34"
+                    data-name="Path 34"
+                    d="M29,27s-5.373,8-12,8S5,27,5,27s5.373-8,12-8S29,27,29,27Z"
+                    transform="translate(0 0)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                  <ellipse
+                    id="Ellipse_5"
+                    data-name="Ellipse 5"
+                    cx="7.556"
+                    cy="8"
+                    rx="7.556"
+                    ry="8"
+                    transform="translate(9.444 19)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></ellipse>
+                  <path
+                    id="Path_35"
+                    data-name="Path 35"
+                    d="M27.989,28.75h-.253a2.318,2.318,0,0,1-.123,3,2.013,2.013,0,0,1-2.833.13v.268a3.421,3.421,0,0,0,1.983,3.163,3.093,3.093,0,0,0,3.518-.737,3.56,3.56,0,0,0,.7-3.725A3.225,3.225,0,0,0,27.989,28.75Z"
+                    transform="translate(-10.989 -5.162)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </g>
+              </svg>
+              Special features
+            </a>
+            <a href="#"><i class="fa-regular fa-paper-plane"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <select name="site" onchange="location.href=this.value">
+              <option value="/">Рус</option>
+              <option value="/uz/">Uzb</option>
+              <option selected="" value="/en/">Eng</option>
+            </select>
+          </div>
         </div>
-    </header>
 
+        <div class="header-search">
+          <div class="col-12">
+            <div class="col-4">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 152 32.04"
+                class="search-img"
+              >
+                <path
+                  d="M.38,10.75A11.21,11.21,0,0,1,11.58-.47V3.58a7.17,7.17,0,1,0,7.18,7.14h4a11.22,11.22,0,1,1-22.43,0Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff; fill-rule: evenodd"
+                ></path>
+                <path
+                  d="M6.64,10.75a5,5,0,1,1,5,5A5,5,0,0,1,6.64,10.75Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M15.07,4.44A2.85,2.85,0,1,1,17.92,7.3,2.86,2.86,0,0,1,15.07,4.44Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M30.46,13.55c-.4,1.88-.46,2.35-.71,3.88l-.15.11-3.84.09-.11-.15c.66-2.6.8-3.11,1.44-6l.24-1.09a39.07,39.07,0,0,0,.76-4.15l.15-.15c1.87-.24,2.29-.31,3.91-.62l.13.15c-.53,2.16-.73,3-1.46,6.24ZM32.68,3.41l-.16.18-3.63.51-.14-.16.65-3,.2-.16L33.26.3l.13.16Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M37.92,6.65a5,5,0,0,1,3-1.07c2.22,0,3.7,1.67,3.7,4.49A7.91,7.91,0,0,1,42.88,15c-2.19,2.68-5,2.66-7.32,2.66l-1.06,5.3-.16.11-1.5,0c-.76,0-1.42,0-2.25.07l-.11-.16,1.29-5.21.4-1.69c.44-2,.89-4,1.29-5.94a33.38,33.38,0,0,0,.64-3.78l.15-.15,3.8-.62.13.15Zm-1.8,8.5a4.73,4.73,0,0,0,.53,0,4.21,4.21,0,0,0,2.44-.91,5.48,5.48,0,0,0,1.69-4c0-1.87-1.2-2.09-1.65-2.09a2.84,2.84,0,0,0-1.59.65Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M55.4,16.43a6.51,6.51,0,0,1-4.4,1.4,5.84,5.84,0,0,1-3.77-1.15A4.65,4.65,0,0,1,45.79,13c0-2,1.09-7.39,6.85-7.39A5.69,5.69,0,0,1,56.5,6.8a4.46,4.46,0,0,1,1.4,3.6,9.39,9.39,0,0,1-.29,2.22A6.88,6.88,0,0,1,55.4,16.43ZM54.2,9.89c0-.82-.27-2-1.58-2a2.3,2.3,0,0,0-1.82.91,9.94,9.94,0,0,0-1.31,4.64,2.52,2.52,0,0,0,.14,1A1.55,1.55,0,0,0,51.2,15.5a2.17,2.17,0,0,0,1.62-.86A6,6,0,0,0,54,11.77,9.51,9.51,0,0,0,54.2,9.89Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M64.93,17.37l-.17.17a9.44,9.44,0,0,1-2,.25c-1.91,0-3.35-.6-3.35-2.6a20.75,20.75,0,0,1,.73-3.84l.73-3-1.55,0-.13-.18.64-2.24L60,5.83h1.46L62.09,3l.16-.16c1.66-.38,2.11-.49,3.64-.93L66,2l-.49,1.84-.48,2,2.26,0L67.4,6c-.31.94-.4,1.18-.69,2.22l-.18.16-2,0-.93,3.89a14.42,14.42,0,0,0-.42,2.1c0,.71.57.91,1,.91A3.55,3.55,0,0,0,65.47,15l.13.11Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M77.29,14.13c-.16.48-.29,1-.42,1.46s-.22.89-.33,1.31l-.12.13a7.42,7.42,0,0,1-3.79.8c-3.13,0-4.12-1.17-4.52-1.66a4.88,4.88,0,0,1-1-3.29c0-3.26,2-7.32,6.65-7.32a5.57,5.57,0,0,1,2.8.65,3.7,3.7,0,0,1,1.73,3.48,10.54,10.54,0,0,1-.38,2.62l-.18.11c-3.22,0-4.19,0-7,.06,0,.25,0,.47,0,.71,0,1.31.88,2.07,2.68,2.07A6.51,6.51,0,0,0,77.09,14ZM75,10.22a5.59,5.59,0,0,0,.13-1,1.39,1.39,0,0,0-1.51-1.46,2.17,2.17,0,0,0-1.57.69,3.79,3.79,0,0,0-1,1.82Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M87.12,10.62c1.24,3.31,1.44,3.79,2.55,6.7l-.16.22-3.7.09-.18-.13c-.38-1.27-1.51-4.95-2.06-6.39-.65,2.84-.82,3.64-1.31,6.3l-.16.13-3.59.09-.11-.15L79.75,12l.6-2.69c.67-2.9,1.51-6.9,1.73-8.65l.16-.15C83.9.3,84.41.22,86.14-.09l.11.15-.75,3-1.84,7.72c1.35-1.53,2.41-2.8,4-4.84l.22-.11c1.55,0,2,0,3.63-.07l.07.22c-.26.29-1.62,1.65-1.91,2Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M102.33,10.2c-.84,3.59-1,4.39-1.44,7.23l-.15.11-3.35.09-.11-.13.15-1a4,4,0,0,1-1.13.78,5,5,0,0,1-2.11.49,3.39,3.39,0,0,1-3-1.71,5.46,5.46,0,0,1-.59-2.6A8,8,0,0,1,93,7.74c2.09-1.91,4.53-1.93,6.48-2h3.77l.14.18ZM99.21,8.25a5.66,5.66,0,0,0-1.69.09c-2.39.62-3.1,3.41-3.1,4.74,0,1.93,1.13,2.2,1.66,2.2a2.46,2.46,0,0,0,1.69-.71Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M103.69,17.45l1.17-5,.91-4.06c.4-1.66.78-3.35,1.11-5,.29-1.4.38-1.91.51-2.93l.18-.16L110-.12l.11.16-.62,2.46-1,4.26a6.16,6.16,0,0,1,3.24-1,3.93,3.93,0,0,1,4,4.28,7.85,7.85,0,0,1-1.84,5c-2,2.29-4.46,2.44-7.32,2.55h-1.22l-1.55,0Zm2.7-1.62.36,0a7.06,7.06,0,0,0,4.19-1,5.82,5.82,0,0,0,2.42-4.53,2.48,2.48,0,0,0-2.64-2.79,4.79,4.79,0,0,0-2.64.93Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M128,10.51c-.77,3.42-.93,4.26-1.37,6.9l-.16.15-2.08.05-.11-.16.15-.88a4.73,4.73,0,0,1-3.24,1.13,4,4,0,0,1-4.1-4.37,8.05,8.05,0,0,1,1.77-4.77C121,6.14,123.81,6,125.85,6l3.06,0,.11.18Zm-1.64-2.82-1,0a6.07,6.07,0,0,0-3.48.93,5.94,5.94,0,0,0-2.37,4.57A2.57,2.57,0,0,0,122.12,16a3.81,3.81,0,0,0,1.93-.52,6.28,6.28,0,0,0,.73-.57Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M139,17.43l-.17.13-2.27.07-.08-.15.93-4,.55-2.5a7.52,7.52,0,0,0,.22-1.58c0-1.33-.82-1.77-1.86-1.77a4.84,4.84,0,0,0-3,1.17c-.82,3.73-1.09,4.91-1.8,8.61l-.15.13-2.26.07-.11-.15.9-3.82.36-1.66a52.25,52.25,0,0,0,1.06-5.62l.16-.15c1-.14,1.29-.18,2.35-.4l.11.15-.31,1.14a6.34,6.34,0,0,1,3.82-1.36,2.82,2.82,0,0,1,3.12,2.89,23.86,23.86,0,0,1-.73,4.34l-.33,1.51Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <path
+                  d="M147.27,10.82l3.44,6.55-.13.17-2.46.07-.18-.13c-.58-1.38-.73-1.69-1.53-3.31L144.86,11c-.65,2.82-.78,3.48-1.34,6.41l-.15.13-2.24.05-.09-.13,1.33-5.71.71-3c.33-1.45.64-2.89,1-4.31.42-2,.53-2.75.73-4l.15-.13,2.42-.4.13.15-.68,2.71-1.87,7.92c.53-.47.85-.75,1.58-1.46s2.66-2.71,3-3.09l.25-.13h2.55l.07.2-1.22,1c-.36.29-.58.51-1,.89Z"
+                  transform="translate(-0.38 0.47)"
+                  style="fill: #fff"
+                ></path>
+                <g>
+                  <g>
+                    <path
+                      d="M126,24l-.78,3.43a1.85,1.85,0,0,1-.81.45,2,2,0,0,1-.48.06c-.26,0-1.18-.09-1.18-1.36a3,3,0,0,1,.63-1.76,2.77,2.77,0,0,1,2.34-.83Zm1.25-.84-1.47,0c-1.23,0-2.72.05-3.67,1.69a3.82,3.82,0,0,0-.51,1.87,1.85,1.85,0,0,0,1.91,2A2.68,2.68,0,0,0,125,28.3l-.14.55c-.15.6-.41,1.69-1.73,1.69a2,2,0,0,1-1.64-.75h-.08l-.44.67v.09a2.42,2.42,0,0,0,.62.47,3.78,3.78,0,0,0,1.58.32,2.65,2.65,0,0,0,2.07-.8,5.4,5.4,0,0,0,.89-2.43l.3-1.41c.37-1.68.47-2.1.8-3.44Z"
+                      transform="translate(-0.38 0.47)"
+                      style="fill: #fff; fill-rule: evenodd"
+                    ></path>
+                    <path
+                      d="M128.91,27.61l.23-1a4.3,4.3,0,0,1,.73-2,1,1,0,0,1,.73-.36.82.82,0,0,1,.44.14l.11,0,.41-1,0-.09a1.16,1.16,0,0,0-.49-.13,1.54,1.54,0,0,0-1.09.64,3.71,3.71,0,0,0-.28.41l.23-.92-.05-.08a8.58,8.58,0,0,1-1.13.18l-.08.07a26.25,26.25,0,0,1-.53,2.73l-.23,1-.39,1.54.05.06,1.1,0,.09-.08Z"
+                      transform="translate(-0.38 0.47)"
+                      style="fill: #fff; fill-rule: evenodd"
+                    ></path>
+                    <path
+                      d="M135.41,26c-.19.86-.61,2-1.73,2a1.07,1.07,0,0,1-1.08-1.21c0-.39.21-3,1.87-3,.39,0,1.07.18,1.07,1.24A3.63,3.63,0,0,1,135.41,26Zm1.1.33a4.33,4.33,0,0,0,.16-1.12,2,2,0,0,0-2.2-2.13c-2.3,0-3,2.28-3,3.56a1.93,1.93,0,0,0,2.17,2.16A2.9,2.9,0,0,0,136.51,26.33Z"
+                      transform="translate(-0.38 0.47)"
+                      style="fill: #fff; fill-rule: evenodd"
+                    ></path>
+                    <path
+                      d="M142.15,27l.25-1.15.61-2.59,0-.07-1.07,0-.08.07c-.14.77-.18,1-.44,2.2l-.4,1.8a2.2,2.2,0,0,1-1.44.61.82.82,0,0,1-.87-.88,9.18,9.18,0,0,1,.24-1.41c.05-.2.5-2,.58-2.37l-.05-.06-1.06,0-.07.07c-.1.57-.13.71-.3,1.42l-.24,1a7.56,7.56,0,0,0-.26,1.59,1.4,1.4,0,0,0,1.55,1.44,2.86,2.86,0,0,0,1.74-.66l-.13.52.05.07,1,0,.07-.07Z"
+                      transform="translate(-0.38 0.47)"
+                      style="fill: #fff; fill-rule: evenodd"
+                    ></path>
+                    <path
+                      d="M145.38,24.5a1.81,1.81,0,0,1,1.23-.52,1.18,1.18,0,0,1,1.2,1.35A2.62,2.62,0,0,1,145,27.9c-.16,0-.28,0-.43,0Zm.28-1.31,0-.08-1.13.18-.07.06c-.09.53-.14.9-.33,1.84s-.4,1.81-.6,2.72l-.21.83-.58,2.4.05.07h1.11l.07-.06c.24-1.28.29-1.51.51-2.47H145a3.89,3.89,0,0,0,3.22-1.36,3.58,3.58,0,0,0,.7-2.11,1.93,1.93,0,0,0-1.89-2.11,2.59,2.59,0,0,0-1.51.52Z"
+                      transform="translate(-0.38 0.47)"
+                      style="fill: #fff; fill-rule: evenodd"
+                    ></path>
+                  </g>
+                  <path
+                    d="M105.73,26a3,3,0,0,1-.57,1.42,1.06,1.06,0,0,1-.81.43.77.77,0,0,1-.78-.52,1.18,1.18,0,0,1-.07-.49,4.91,4.91,0,0,1,.65-2.31,1.14,1.14,0,0,1,.91-.45c.65,0,.78.57.78,1A5.16,5.16,0,0,1,105.73,26Zm1.81.42a4.61,4.61,0,0,0,.14-1.1,2.22,2.22,0,0,0-.69-1.79,2.86,2.86,0,0,0-1.92-.62c-2.87,0-3.41,2.66-3.41,3.67a2.29,2.29,0,0,0,.72,1.86,2.9,2.9,0,0,0,1.87.57,3.25,3.25,0,0,0,2.19-.69A3.5,3.5,0,0,0,107.54,26.37Z"
+                    transform="translate(-0.38 0.47)"
+                    style="fill: #fff; fill-rule: evenodd"
+                  ></path>
+                  <path
+                    d="M111.38,27.44l-.07-.06a1.59,1.59,0,0,1-.63.13c-.24,0-.52-.1-.52-.45a6.49,6.49,0,0,1,.21-1l.46-1.93,1,0,.09-.07c.15-.52.19-.64.34-1.11l0-.07-1.12,0,.24-1,.24-.91-.07-.07c-.76.22-1,.28-1.8.47l-.08.07-.32,1.43h-.73l-.08,0L108.19,24l.07.08.77,0-.36,1.51a9.93,9.93,0,0,0-.37,1.91c0,1,.72,1.29,1.67,1.29a4.62,4.62,0,0,0,1-.12l.09-.09Z"
+                    transform="translate(-0.38 0.47)"
+                    style="fill: #fff; fill-rule: evenodd"
+                  ></path>
+                  <path
+                    d="M114.69,24.5a1.38,1.38,0,0,1,.8-.33c.22,0,.81.12.81,1a2.71,2.71,0,0,1-.84,2,2,2,0,0,1-1.21.45l-.26,0Zm.32-1.58-.06-.08-1.89.31-.08.08a15.44,15.44,0,0,1-.32,1.87c-.2,1-.42,2-.64,3l-.2.84-.64,2.59.06.08c.41,0,.74,0,1.11,0h.75l.08-.05.53-2.64a4.13,4.13,0,0,0,3.64-1.32,4,4,0,0,0,.85-2.43c0-1.4-.74-2.23-1.84-2.23a2.45,2.45,0,0,0-1.48.53Z"
+                    transform="translate(-0.38 0.47)"
+                    style="fill: #fff; fill-rule: evenodd"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="col-4">
+              <form action="joha">
+                <input type="search" class="search" placeholder="Search" />
+              </form>
+            </div>
+            <div class="col-4">
+              <div class="login">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="20"
+                  viewBox="0 0 16 20"
+                >
+                  <g
+                    id="_46-Lock"
+                    data-name="46-Lock"
+                    transform="translate(-3)"
+                  >
+                    <rect
+                      id="Rectangle_74"
+                      data-name="Rectangle 74"
+                      width="14"
+                      height="12"
+                      transform="translate(4 7)"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></rect>
+                    <path
+                      id="Path_32"
+                      data-name="Path 32"
+                      d="M9,7V1.6A.592.592,0,0,1,9.583,1h3.5"
+                      transform="translate(-2.083)"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></path>
+                    <path
+                      id="Path_33"
+                      data-name="Path 33"
+                      d="M20.083,7V1.6A.592.592,0,0,0,19.5,1H16"
+                      transform="translate(-5)"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></path>
+                    <ellipse
+                      id="Ellipse_4"
+                      data-name="Ellipse 4"
+                      cx="1.75"
+                      cy="1.8"
+                      rx="1.75"
+                      ry="1.8"
+                      transform="translate(9.25 10)"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></ellipse>
+                    <line
+                      id="Line_8"
+                      data-name="Line 8"
+                      y2="3"
+                      transform="translate(11 13.6)"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></line>
+                  </g>
+                </svg>
+                <span class="login-p">Login</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12.828"
+                  height="7.414"
+                  viewBox="0 0 12.828 7.414"
+                >
+                  <path
+                    id="Path_31"
+                    data-name="Path 31"
+                    d="M1236.532,304.088l5,5-5,5"
+                    transform="translate(315.502 -1235.118) rotate(90)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    opacity="0.3"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="head-menu">
+          <ul class="main-navigations">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BRANCHES</a></li>
+            <li><a href="#">TARIFFS</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">CITIZENS RECEPTION</a></li>
+            <li><a href="#">CAREER</a></li>
+            <li><a href="#">CONTACTS</a></li>
+          </ul>
+        </div>
+
+        <div class="header-bottom">
+          <h1 class="bottom-font">Auto loan</h1>
+          <h3 class="bottom-font">
+            Buy a car on favorable terms from the market
+          </h3>
+          <br />
+          <button class="bottom-btn">
+            <a href="#">Find more</a>
+          </button>
+        </div>
+      </div>
+    </header>
     <!-- header-top section -->
-    
-</body>
+
+    <!-- main - section -->
+    <section class="main" style="margin-top: 100px">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="col-6">
+              <div class="main-img">
+                <svg
+                width="72"
+                height="72"
+                viewBox="0 0 72 72"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.3"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M59.4717 62.494V65.2951C59.4717 66.789 58.2607 68 56.7668 68H29.7184C28.2246 68 27.0136 66.789 27.0136 65.2951V50.4185C27.0136 48.9247 28.2246 47.7137 29.7184 47.7137H34.5332L36.3372 40.2758C36.4622 39.7577 36.6882 39.2692 37.0021 38.8384C37.316 38.4076 37.7117 38.0429 38.1666 37.7651C38.6215 37.4873 39.1267 37.3018 39.6533 37.2193C40.1799 37.1368 40.7176 37.1589 41.2357 37.2843L64.8895 42.9969C65.4074 43.1222 65.8955 43.3484 66.326 43.6624C66.7566 43.9764 67.121 44.3722 67.3985 44.827C67.6761 45.2819 67.8613 45.787 67.9436 46.3135C68.026 46.8399 68.0038 47.3775 67.8783 47.8954L65.022 59.7236C64.8833 60.2972 64.6211 60.8336 64.2537 61.2954C63.8864 61.7573 63.4227 62.1334 62.8951 62.3976C62.3674 62.6618 61.7885 62.8078 61.1986 62.8253C60.6087 62.8427 60.0222 62.7313 59.4798 62.4988L59.4717 62.494Z"
+                  fill="#52AE30"
+                ></path>
+                <path
+                  d="M23.8724 47.2774V62.154C23.8724 63.6479 25.0834 64.8589 26.5773 64.8589H53.6257C55.1195 64.8589 56.3305 63.6479 56.3305 62.154V47.2774C56.3305 45.7836 55.1195 44.5726 53.6257 44.5726H26.5773C25.0834 44.5726 23.8724 45.7836 23.8724 47.2774Z"
+                  stroke="#52AE30"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M31.3919 44.5727L33.1961 37.1343C33.3211 36.6162 33.547 36.1278 33.8609 35.6969C34.1748 35.2661 34.5705 34.9014 35.0254 34.6236C35.4803 34.3458 35.9855 34.1603 36.5121 34.0778C37.0388 33.9953 37.5765 34.0174 38.0945 34.1428L61.7484 39.8554C62.2663 39.9808 62.7544 40.2069 63.1849 40.5209C63.6154 40.8349 63.9799 41.2307 64.2574 41.6856C64.535 42.1404 64.7202 42.6455 64.8025 43.172C64.8848 43.6985 64.8626 44.236 64.7372 44.7539L61.8809 56.5821C61.7422 57.1557 61.48 57.6921 61.1126 58.154C60.7453 58.6158 60.2816 58.9919 59.7539 59.2562C59.2263 59.5204 58.6473 59.6663 58.0575 59.6838C57.4676 59.7012 56.8811 59.5898 56.3387 59.3573"
+                  stroke="#52AE30"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M40.1881 52.2291C40.7059 52.2291 41.2119 52.3826 41.6424 52.6703C42.0729 52.9579 42.4084 53.3667 42.6065 53.845C42.8046 54.3233 42.8564 54.8496 42.7554 55.3574C42.6544 55.8651 42.4051 56.3316 42.0391 56.6976C41.673 57.0637 41.2066 57.313 40.6988 57.414C40.1911 57.515 39.6647 57.4632 39.1864 57.265C38.7081 57.0669 38.2993 56.7314 38.0117 56.301C37.7241 55.8705 37.5706 55.3644 37.5706 54.8467C37.5706 54.1525 37.8463 53.4867 38.3372 52.9958C38.8281 52.5049 39.4939 52.2291 40.1881 52.2291Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M40.1881 52.2291C40.7059 52.2291 41.2119 52.3826 41.6424 52.6703C42.0729 52.9579 42.4084 53.3667 42.6065 53.845C42.8046 54.3233 42.8564 54.8496 42.7554 55.3574C42.6544 55.8651 42.4051 56.3316 42.0391 56.6976C41.673 57.0637 41.2066 57.313 40.6988 57.414C40.1911 57.515 39.6647 57.4632 39.1864 57.265C38.7081 57.0669 38.2993 56.7314 38.0117 56.301C37.7241 55.8705 37.5706 55.3644 37.5706 54.8467C37.5706 54.1525 37.8463 53.4867 38.3372 52.9958C38.8281 52.5049 39.4939 52.2291 40.1881 52.2291"
+                  stroke="#52AE30"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4 48.6297C4.00208 45.7471 4.68619 42.9058 5.99644 40.3381C7.30668 37.7705 9.20587 35.5492 11.5388 33.856C13.8717 32.1627 16.5722 31.0455 19.4196 30.5956C22.2669 30.1457 25.1803 30.3759 27.9216 31.2674"
+                  stroke="#52AE30"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.642 9.49341C14.3701 11.2851 16.4416 12.7101 18.7327 13.6832C21.0238 14.6564 23.4876 15.1577 25.9769 15.1573C28.4993 15.159 30.9955 14.6454 33.3124 13.648"
+                  stroke="#52AE30"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M22.2577 26.3149C28.4198 26.3149 33.4151 21.3196 33.4151 15.1575C33.4151 8.99537 28.4198 4 22.2577 4C16.0956 4 11.1002 8.99537 11.1002 15.1575C11.1002 21.3196 16.0956 26.3149 22.2577 26.3149Z"
+                  stroke="#52AE30"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  opacity="0.3"
+                  d="M34.0411 16.7403C35.0011 16.4274 35.4893 15.381 35.0605 14.4669C33.52 11.1829 29.8567 6.79769 23.4785 7.23757C20.7558 7.23757 17.5685 8.67533 15.5587 10.7372C14.8972 11.4158 15.009 12.4885 15.7325 13.1005C19.192 16.0263 23.5848 17.6577 28.1499 17.6773C30.1544 17.6765 32.1424 17.3592 34.0411 16.7403Z"
+                  fill="#52AE30"
+                ></path>
+              </svg>
+              </div>
+              <div class="main-content">
+                <h1><a href="#">Individual clients</a></h1><br>
+                <a href="#" class="main-href">Money transfers</a><br>
+                <a href="#" class="main-href">Deposits</a><br>
+                <a href="#" class="main-href">Loans</a><br>
+                <a href="#" class="main-href">Bank Cards</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /main - section -->
+  </body>
 </html>
