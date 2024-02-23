@@ -2,7 +2,7 @@
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length >0){
-    function animOnScroll(params) {
+    function animOnScroll() {
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index];
             const animItemsHeight = animItem.offsetHieght;
@@ -29,4 +29,5 @@ if (animItems.length >0){
         scrollTop = window.pegerYOffset ||  document.documentElement.scrollTop;
         return {top: rect.top + scrollTop, left: rect.left + scrollLeft} 
     }   
+    animOnScroll()
 }

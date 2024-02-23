@@ -284,6 +284,7 @@ header {
     margin: 20px 0px;
     box-sizing: border-box;
     margin-left: 50px;
+    animation: bottomTotop ease 0.7s forwards;
 }
 
 
@@ -431,6 +432,7 @@ header {
     border-top-left-radius: 36px;
     border-bottom-left-radius: 36px;
     border-right: 1px solid #d0d0d0;
+    animation: bottomTotop ease 0.7s forwards;
 }
 
 .main-valute__title h5 {
@@ -516,6 +518,7 @@ header {
     border-top-right-radius: 36px;
     border-bottom-right-radius: 36px;
     border-right: 1px solid #d0d0d0;
+    animation: bottomTotop ease 0.7s forwards;
 }
 
 .main-btn {
@@ -549,17 +552,6 @@ header {
     background-color: #52ae30;
     color: white;
 }
-
-/* .main-all__box:hover {
-    opacity: 1;
-    transform: translateY(0);
-} */
-
-/* .main-all__box {
-    opacity: 1;
-    transform: translateY(100px);
-    transition: all 1s;
-} */
 
 .main-item {
     margin-left: 10px;
@@ -654,6 +646,7 @@ header {
     background-color: #f4f9ff;
     opacity: 0.7;
     height: 500px;
+    animation: leftToright ease 1s forwards;
 }
 
 .mobile-title h3 {
@@ -692,5 +685,315 @@ header {
     transition: all 0.5s;
 }
 
+.fade-up {
+    background-position: right bottom;
+    display: flex;
+    background-color: #cff7e1;
+    border-radius: 32px;
+    border: 1px solid #a0ecc2;
+    height: 450px;
+    align-items: center;
+    animation: bottomTotop ease 0.7s forwards;
+}
 
+.fade-up p {
+    font-size: 20px;
+    color: #000000b5;
+    padding-top: 50px;
+    line-height: 24px;
+    text-align: center;
+    padding-left: 30px;
+    display: block;
+
+}
+
+.deagram-href {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #52ae30;
+    border-radius: 24px;
+    padding: 13px 66px 15px 66px;
+    border: none;
+    transition: 0.5s;
+    margin: 0 auto;
+    display: block;
+    margin-top: 170px;
+    width: 295px;
+}
+
+.deagram-href:hover {
+    background-color: #74bf1e;
+}
+
+.diagram-right {
+    background: url(../images/statsbg.png);
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-color: #cff7e1;
+    border-radius: 32px;
+    border: 1px solid #a0ecc2;
+    margin-left: 50px;
+    height: 450px;
+    width: 780px;
+    width: 100%;
+    padding: 0 21px;
+    box-shadow: 0px 2px 11px 0px #0000001f;
+    animation: bottomTotop ease 0.7s forwards;
+}
+
+.fade-up {
+    box-shadow: 0px 2px 11px 0px #0000001f;
+}
+
+.diagram-title {
+    color: #262626!;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0px;
+    padding-top: 29px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.diagram-content p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.diagram-content {
+    float: right;
+    margin-top: -150px;
+    margin-right: 18px;
+
+}
+
+.diagram svg {
+    display: inline-block;
+}
+
+.light-blue {
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 25px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.814);
+}
+
+.light-blue::before {
+    background: #6999d1;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 19px;
+    height: 19px;
+}
+
+.amount_1 {
+    font-size: 13px;
+    color: #7d7d7d;
+    padding-left: 30px;
+    position: relative;
+    display: block;
+    margin-bottom: 22px;
+    top: 40px;
+}
+
+.amount_1 i {
+    font-size: 17.27px;
+    color: #3399cc;
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    left: 0;
+    width: 20px;
+}
+/* /main-diagram */
+
+
+/* link section */
+.container-links {
+    width: 1380px;
+    margin: 0 auto;
+    animation: bottomTotop ease 0.7s forwards;
+}
+
+.links {
+    background: #f5f7f8d0;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.block-title {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 43px;
+    padding-top: 24px;
+}
+
+.item-box a {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 15px;
+    min-height: 62px;
+    display: flex;
+    color: #52ae30;
+    align-items: center;
+    margin-left: -82px;
+    line-height: 24px;
+}
+
+.item-box:not(:last-of-type) {
+    border-right: 1px solid #e9e9e9;
+}
+
+.item-box {
+    display: inline-block;
+    margin-left: 100px;
+    box-sizing: border-box;
+}
+
+.item-box a:hover {
+    color: #74bf1e;
+}
 /* /main - section */
+
+/* main footer section */
+.main-footer {
+    margin-top: 100px;
+}
+
+.mian-footer-title h4 {
+    color: rgb(0, 102, 72);
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.mian-footer-title {
+    margin-bottom: 20px;
+}
+
+.main-footer-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    padding-top: 20px;
+}
+
+.main-footer-content a {
+    font-size: 12pt;
+    line-height: 20px;
+    font-weight: 400;
+    color: #111;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.main-footer-content a:hover {
+    color: #74bf1e;
+}
+
+.top {
+    padding-top: 16px;
+}
+
+.top i {
+    color: #52ae30;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.n2 a {
+    font-size: 15px;
+    line-height: 22px;
+    color: #52ae30;
+    text-decoration: underline;
+}
+
+.n2 a:hover {
+    color: #52ae30;
+}
+
+.mian-footer-box  {
+    margin-left: 15px;
+    box-sizing: border-box;
+}
+
+.main-footer-all {
+    padding-bottom: 50px;
+}
+
+.meta-left, .meta-right {
+    display: inline-block;
+}
+
+.meta-right {
+    float: right;
+}
+
+.meta-right a {
+    margin-left: 10px;
+}
+
+.footer-meta::before {
+    content: '';
+    display: block;
+    left: 15px;
+    right: 15px;
+    top: 0;
+    background-color: #cbe0f7;
+    height: 1px;
+    margin-bottom: 20px;
+}
+
+.footer-meta {
+    margin-bottom: 100px;
+}
+/* /main footer section */
+
+/* footer */
+footer {
+    background-color: #52ae30;
+    color: #fff;
+    padding: 24px 24px 24px 0px;    
+    margin-left: 0px;
+    margin-right: 0px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 400px;
+}
+
+.search-img-1 {
+    display: inline-block;
+    height: 58px;
+}
+
+.footer-right, .footer-left {
+    display: inline-block;
+}
+
+.footer-right {
+    float: right;
+}
+
+.footer-right p {
+    line-height: 24px;
+}
+
+
+
+
+
+
+/* / footer */
